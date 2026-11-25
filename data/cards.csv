@@ -1,0 +1,518 @@
+card_id,name,types,hp,rarity,set_name,release_year,image_url
+base1-1,Alakazam,"[""Psychic""]",80,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/1.png
+base1-10,Mewtwo,"[""Psychic""]",60,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/10.png
+base1-11,Nidoking,"[""Grass""]",90,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/11.png
+base1-12,Ninetales,"[""Fire""]",80,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/12.png
+base1-13,Poliwrath,"[""Water""]",90,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/13.png
+base1-14,Raichu,"[""Lightning""]",80,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/14.png
+base1-15,Venusaur,"[""Grass""]",100,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/15.png
+base1-16,Zapdos,"[""Lightning""]",90,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/16.png
+base1-17,Beedrill,"[""Grass""]",80,Rare,Base,1999,https://images.pokemontcg.io/base1/17.png
+base1-18,Dragonair,"[""Colorless""]",80,Rare,Base,1999,https://images.pokemontcg.io/base1/18.png
+base1-19,Dugtrio,"[""Fighting""]",70,Rare,Base,1999,https://images.pokemontcg.io/base1/19.png
+base1-2,Blastoise,"[""Water""]",100,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/2.png
+base1-20,Electabuzz,"[""Lightning""]",70,Rare,Base,1999,https://images.pokemontcg.io/base1/20.png
+base1-21,Electrode,"[""Lightning""]",80,Rare,Base,1999,https://images.pokemontcg.io/base1/21.png
+base1-22,Pidgeotto,"[""Colorless""]",60,Rare,Base,1999,https://images.pokemontcg.io/base1/22.png
+base1-23,Arcanine,"[""Fire""]",100,Uncommon,Base,1999,https://images.pokemontcg.io/base1/23.png
+base1-24,Charmeleon,"[""Fire""]",80,Uncommon,Base,1999,https://images.pokemontcg.io/base1/24.png
+base1-25,Dewgong,"[""Water""]",80,Uncommon,Base,1999,https://images.pokemontcg.io/base1/25.png
+base1-26,Dratini,"[""Colorless""]",40,Uncommon,Base,1999,https://images.pokemontcg.io/base1/26.png
+base1-27,Farfetch'd,"[""Colorless""]",50,Uncommon,Base,1999,https://images.pokemontcg.io/base1/27.png
+base1-28,Growlithe,"[""Fire""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/28.png
+base1-29,Haunter,"[""Psychic""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/29.png
+base1-3,Chansey,"[""Colorless""]",120,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/3.png
+base1-30,Ivysaur,"[""Grass""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/30.png
+base1-31,Jynx,"[""Psychic""]",70,Uncommon,Base,1999,https://images.pokemontcg.io/base1/31.png
+base1-32,Kadabra,"[""Psychic""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/32.png
+base1-33,Kakuna,"[""Grass""]",80,Uncommon,Base,1999,https://images.pokemontcg.io/base1/33.png
+base1-34,Machoke,"[""Fighting""]",80,Uncommon,Base,1999,https://images.pokemontcg.io/base1/34.png
+base1-35,Magikarp,"[""Water""]",30,Uncommon,Base,1999,https://images.pokemontcg.io/base1/35.png
+base1-36,Magmar,"[""Fire""]",50,Uncommon,Base,1999,https://images.pokemontcg.io/base1/36.png
+base1-37,Nidorino,"[""Grass""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/37.png
+base1-38,Poliwhirl,"[""Water""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/38.png
+base1-39,Porygon,"[""Colorless""]",30,Uncommon,Base,1999,https://images.pokemontcg.io/base1/39.png
+base1-4,Charizard,"[""Fire""]",120,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/4.png
+base1-40,Raticate,"[""Colorless""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/40.png
+base1-41,Seel,"[""Water""]",60,Uncommon,Base,1999,https://images.pokemontcg.io/base1/41.png
+base1-42,Wartortle,"[""Water""]",70,Uncommon,Base,1999,https://images.pokemontcg.io/base1/42.png
+base1-43,Abra,"[""Psychic""]",30,Common,Base,1999,https://images.pokemontcg.io/base1/43.png
+base1-44,Bulbasaur,"[""Grass""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/44.png
+base1-45,Caterpie,"[""Grass""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/45.png
+base1-46,Charmander,"[""Fire""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/46.png
+base1-47,Diglett,"[""Fighting""]",30,Common,Base,1999,https://images.pokemontcg.io/base1/47.png
+base1-48,Doduo,"[""Colorless""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/48.png
+base1-49,Drowzee,"[""Psychic""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/49.png
+base1-5,Clefairy,"[""Colorless""]",40,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/5.png
+base1-50,Gastly,"[""Psychic""]",30,Common,Base,1999,https://images.pokemontcg.io/base1/50.png
+base1-51,Koffing,"[""Grass""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/51.png
+base1-52,Machop,"[""Fighting""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/52.png
+base1-53,Magnemite,"[""Lightning""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/53.png
+base1-54,Metapod,"[""Grass""]",70,Common,Base,1999,https://images.pokemontcg.io/base1/54.png
+base1-55,Nidoran ♂,"[""Grass""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/55.png
+base1-56,Onix,"[""Fighting""]",90,Common,Base,1999,https://images.pokemontcg.io/base1/56.png
+base1-57,Pidgey,"[""Colorless""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/57.png
+base1-58,Pikachu,"[""Lightning""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/58.png
+base1-59,Poliwag,"[""Water""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/59.png
+base1-6,Gyarados,"[""Water""]",100,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/6.png
+base1-60,Ponyta,"[""Fire""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/60.png
+base1-61,Rattata,"[""Colorless""]",30,Common,Base,1999,https://images.pokemontcg.io/base1/61.png
+base1-62,Sandshrew,"[""Fighting""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/62.png
+base1-63,Squirtle,"[""Water""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/63.png
+base1-64,Starmie,"[""Water""]",60,Common,Base,1999,https://images.pokemontcg.io/base1/64.png
+base1-65,Staryu,"[""Water""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/65.png
+base1-66,Tangela,"[""Grass""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/66.png
+base1-67,Voltorb,"[""Lightning""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/67.png
+base1-68,Vulpix,"[""Fire""]",50,Common,Base,1999,https://images.pokemontcg.io/base1/68.png
+base1-69,Weedle,"[""Grass""]",40,Common,Base,1999,https://images.pokemontcg.io/base1/69.png
+base1-7,Hitmonchan,"[""Fighting""]",70,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/7.png
+base1-8,Machamp,"[""Fighting""]",100,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/8.png
+base1-9,Magneton,"[""Lightning""]",60,Rare Holo,Base,1999,https://images.pokemontcg.io/base1/9.png
+ex6-1,Beedrill,"[""Grass""]",90,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/1.png
+ex6-10,Pidgeot,"[""Colorless""]",100,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/10.png
+ex6-104,Blastoise ex,"[""Water""]",150,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/104.png
+ex6-105,Charizard ex,"[""Fire""]",160,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/105.png
+ex6-106,Clefable ex,"[""Colorless""]",100,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/106.png
+ex6-107,Electrode ex,"[""Lightning""]",90,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/107.png
+ex6-108,Gengar ex,"[""Psychic""]",150,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/108.png
+ex6-109,Gyarados ex,"[""Water""]",130,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/109.png
+ex6-11,Poliwrath,"[""Water""]",120,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/11.png
+ex6-110,Mr. Mime ex,"[""Psychic""]",80,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/110.png
+ex6-111,Mr. Mime ex,"[""Psychic""]",80,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/111.png
+ex6-112,Venusaur ex,"[""Grass""]",150,Rare Holo EX,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/112.png
+ex6-113,Charmander,"[""Fire""]",50,Rare Secret,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/113.png
+ex6-114,Articuno ex,"[""Water""]",110,Rare Secret,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/114.png
+ex6-115,Moltres ex,"[""Fire""]",110,Rare Secret,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/115.png
+ex6-116,Zapdos ex,"[""Lightning""]",110,Rare Secret,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/116.png
+ex6-12,Raichu,"[""Lightning""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/12.png
+ex6-13,Rapidash,"[""Fire""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/13.png
+ex6-14,Slowbro,"[""Psychic""]",60,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/14.png
+ex6-15,Snorlax,"[""Colorless""]",90,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/15.png
+ex6-16,Tauros,"[""Colorless""]",70,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/16.png
+ex6-17,Victreebel,"[""Grass""]",110,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/17.png
+ex6-18,Arcanine,"[""Fire""]",90,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/18.png
+ex6-19,Chansey,"[""Colorless""]",90,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/19.png
+ex6-2,Butterfree,"[""Grass""]",100,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/2.png
+ex6-20,Cloyster,"[""Water""]",70,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/20.png
+ex6-21,Dodrio,"[""Colorless""]",70,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/21.png
+ex6-22,Dugtrio,"[""Fighting""]",80,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/22.png
+ex6-23,Farfetch'd,"[""Colorless""]",70,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/23.png
+ex6-24,Fearow,"[""Colorless""]",80,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/24.png
+ex6-25,Hypno,"[""Psychic""]",80,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/25.png
+ex6-26,Kingler,"[""Water""]",80,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/26.png
+ex6-27,Magneton,"[""Lightning""]",80,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/27.png
+ex6-28,Primeape,"[""Fighting""]",70,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/28.png
+ex6-29,Scyther,"[""Grass""]",60,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/29.png
+ex6-3,Dewgong,"[""Water""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/3.png
+ex6-30,Tangela,"[""Grass""]",60,Rare,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/30.png
+ex6-31,Charmeleon,"[""Fire""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/31.png
+ex6-32,Drowzee,"[""Psychic""]",50,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/32.png
+ex6-33,Exeggcute,"[""Psychic""]",50,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/33.png
+ex6-34,Haunter,"[""Psychic""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/34.png
+ex6-35,Ivysaur,"[""Grass""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/35.png
+ex6-36,Kakuna,"[""Grass""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/36.png
+ex6-37,Lickitung,"[""Colorless""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/37.png
+ex6-38,Mankey,"[""Fighting""]",50,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/38.png
+ex6-39,Metapod,"[""Grass""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/39.png
+ex6-4,Ditto,"[""Colorless""]",60,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/4.png
+ex6-40,Nidorina,"[""Grass""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/40.png
+ex6-41,Nidorino,"[""Grass""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/41.png
+ex6-42,Onix,"[""Fighting""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/42.png
+ex6-43,Parasect,"[""Grass""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/43.png
+ex6-44,Persian,"[""Colorless""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/44.png
+ex6-45,Pidgeotto,"[""Colorless""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/45.png
+ex6-46,Poliwhirl,"[""Water""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/46.png
+ex6-47,Porygon,"[""Colorless""]",50,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/47.png
+ex6-48,Raticate,"[""Colorless""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/48.png
+ex6-49,Venomoth,"[""Grass""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/49.png
+ex6-5,Exeggutor,"[""Psychic""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/5.png
+ex6-50,Wartortle,"[""Water""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/50.png
+ex6-51,Weepinbell,"[""Grass""]",70,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/51.png
+ex6-52,Wigglytuff,"[""Colorless""]",80,Uncommon,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/52.png
+ex6-53,Bellsprout,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/53.png
+ex6-54,Bulbasaur,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/54.png
+ex6-55,Bulbasaur,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/55.png
+ex6-56,Caterpie,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/56.png
+ex6-57,Charmander,"[""Fire""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/57.png
+ex6-58,Charmander,"[""Fire""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/58.png
+ex6-59,Clefairy,"[""Colorless""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/59.png
+ex6-6,Kangaskhan,"[""Colorless""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/6.png
+ex6-60,Cubone,"[""Fighting""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/60.png
+ex6-61,Diglett,"[""Fighting""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/61.png
+ex6-62,Doduo,"[""Colorless""]",40,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/62.png
+ex6-63,Gastly,"[""Psychic""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/63.png
+ex6-64,Growlithe,"[""Fire""]",60,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/64.png
+ex6-65,Jigglypuff,"[""Colorless""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/65.png
+ex6-66,Krabby,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/66.png
+ex6-67,Magikarp,"[""Water""]",30,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/67.png
+ex6-68,Magnemite,"[""Lightning""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/68.png
+ex6-69,Meowth,"[""Colorless""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/69.png
+ex6-7,Marowak,"[""Fighting""]",80,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/7.png
+ex6-70,Nidoran ♀,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/70.png
+ex6-71,Nidoran ♂,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/71.png
+ex6-72,Paras,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/72.png
+ex6-73,Pidgey,"[""Colorless""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/73.png
+ex6-74,Pikachu,"[""Lightning""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/74.png
+ex6-75,Poliwag,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/75.png
+ex6-76,Ponyta,"[""Fire""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/76.png
+ex6-77,Rattata,"[""Colorless""]",40,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/77.png
+ex6-78,Seel,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/78.png
+ex6-79,Shellder,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/79.png
+ex6-8,Nidoking,"[""Fighting""]",120,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/8.png
+ex6-80,Slowpoke,"[""Psychic""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/80.png
+ex6-81,Spearow,"[""Colorless""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/81.png
+ex6-82,Squirtle,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/82.png
+ex6-83,Squirtle,"[""Water""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/83.png
+ex6-84,Venonat,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/84.png
+ex6-85,Voltorb,"[""Lightning""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/85.png
+ex6-86,Weedle,"[""Grass""]",50,Common,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/86.png
+ex6-9,Nidoqueen,"[""Fighting""]",120,Rare Holo,FireRed & LeafGreen,2004,https://images.pokemontcg.io/ex6/9.png
+neo1-1,Ampharos,"[""Lightning""]",80,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/1.png
+neo1-10,Meganium,"[""Grass""]",100,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/10.png
+neo1-11,Meganium,"[""Grass""]",100,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/11.png
+neo1-12,Pichu,"[""Lightning""]",30,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/12.png
+neo1-13,Skarmory,"[""Metal""]",60,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/13.png
+neo1-14,Slowking,"[""Psychic""]",80,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/14.png
+neo1-15,Steelix,"[""Metal""]",110,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/15.png
+neo1-16,Togetic,"[""Colorless""]",60,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/16.png
+neo1-17,Typhlosion,"[""Fire""]",100,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/17.png
+neo1-18,Typhlosion,"[""Fire""]",100,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/18.png
+neo1-2,Azumarill,"[""Water""]",70,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/2.png
+neo1-20,Cleffa,"[""Colorless""]",30,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/20.png
+neo1-21,Donphan,"[""Fighting""]",70,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/21.png
+neo1-22,Elekid,"[""Lightning""]",30,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/22.png
+neo1-23,Magby,"[""Fire""]",30,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/23.png
+neo1-24,Murkrow,"[""Darkness""]",50,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/24.png
+neo1-25,Sneasel,"[""Darkness""]",60,Rare,Neo Genesis,2000,https://images.pokemontcg.io/neo1/25.png
+neo1-26,Aipom,"[""Colorless""]",40,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/26.png
+neo1-27,Ariados,"[""Grass""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/27.png
+neo1-28,Bayleef,"[""Grass""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/28.png
+neo1-29,Bayleef,"[""Grass""]",80,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/29.png
+neo1-3,Bellossom,"[""Grass""]",70,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/3.png
+neo1-30,Clefairy,"[""Colorless""]",50,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/30.png
+neo1-31,Croconaw,"[""Water""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/31.png
+neo1-32,Croconaw,"[""Water""]",80,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/32.png
+neo1-33,Electabuzz,"[""Lightning""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/33.png
+neo1-34,Flaaffy,"[""Lightning""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/34.png
+neo1-35,Furret,"[""Colorless""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/35.png
+neo1-36,Gloom,"[""Grass""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/36.png
+neo1-37,Granbull,"[""Colorless""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/37.png
+neo1-38,Lanturn,"[""Lightning""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/38.png
+neo1-39,Ledian,"[""Grass""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/39.png
+neo1-4,Feraligatr,"[""Water""]",100,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/4.png
+neo1-40,Magmar,"[""Fire""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/40.png
+neo1-41,Miltank,"[""Colorless""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/41.png
+neo1-42,Noctowl,"[""Colorless""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/42.png
+neo1-43,Phanpy,"[""Fighting""]",40,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/43.png
+neo1-44,Piloswine,"[""Water""]",80,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/44.png
+neo1-45,Quagsire,"[""Water""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/45.png
+neo1-46,Quilava,"[""Fire""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/46.png
+neo1-47,Quilava,"[""Fire""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/47.png
+neo1-48,Seadra,"[""Water""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/48.png
+neo1-49,Skiploom,"[""Grass""]",60,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/49.png
+neo1-5,Feraligatr,"[""Water""]",120,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/5.png
+neo1-50,Sunflora,"[""Grass""]",70,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/50.png
+neo1-51,Togepi,"[""Colorless""]",40,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/51.png
+neo1-52,Xatu,"[""Psychic""]",80,Uncommon,Neo Genesis,2000,https://images.pokemontcg.io/neo1/52.png
+neo1-53,Chikorita,"[""Grass""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/53.png
+neo1-54,Chikorita,"[""Grass""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/54.png
+neo1-55,Chinchou,"[""Lightning""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/55.png
+neo1-56,Cyndaquil,"[""Fire""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/56.png
+neo1-57,Cyndaquil,"[""Fire""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/57.png
+neo1-58,Girafarig,"[""Psychic""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/58.png
+neo1-59,Gligar,"[""Fighting""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/59.png
+neo1-6,Heracross,"[""Grass""]",60,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/6.png
+neo1-60,Hoothoot,"[""Colorless""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/60.png
+neo1-61,Hoppip,"[""Grass""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/61.png
+neo1-62,Horsea,"[""Water""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/62.png
+neo1-63,Ledyba,"[""Grass""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/63.png
+neo1-64,Mantine,"[""Water""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/64.png
+neo1-65,Mareep,"[""Lightning""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/65.png
+neo1-66,Marill,"[""Water""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/66.png
+neo1-67,Natu,"[""Psychic""]",30,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/67.png
+neo1-68,Oddish,"[""Grass""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/68.png
+neo1-69,Onix,"[""Fighting""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/69.png
+neo1-7,Jumpluff,"[""Grass""]",70,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/7.png
+neo1-70,Pikachu,"[""Lightning""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/70.png
+neo1-71,Sentret,"[""Colorless""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/71.png
+neo1-72,Shuckle,"[""Grass""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/72.png
+neo1-73,Slowpoke,"[""Psychic""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/73.png
+neo1-74,Snubbull,"[""Colorless""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/74.png
+neo1-75,Spinarak,"[""Grass""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/75.png
+neo1-76,Stantler,"[""Colorless""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/76.png
+neo1-77,Sudowoodo,"[""Fighting""]",60,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/77.png
+neo1-78,Sunkern,"[""Grass""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/78.png
+neo1-79,Swinub,"[""Water""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/79.png
+neo1-8,Kingdra,"[""Water""]",90,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/8.png
+neo1-80,Totodile,"[""Water""]",40,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/80.png
+neo1-81,Totodile,"[""Water""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/81.png
+neo1-82,Wooper,"[""Water""]",50,Common,Neo Genesis,2000,https://images.pokemontcg.io/neo1/82.png
+neo1-9,Lugia,"[""Colorless""]",90,Rare Holo,Neo Genesis,2000,https://images.pokemontcg.io/neo1/9.png
+sv3pt5-1,Bulbasaur,"[""Grass""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/1.png
+sv3pt5-10,Caterpie,"[""Grass""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/10.png
+sv3pt5-100,Voltorb,"[""Lightning""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/100.png
+sv3pt5-101,Electrode,"[""Lightning""]",90,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/101.png
+sv3pt5-102,Exeggcute,"[""Grass""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/102.png
+sv3pt5-103,Exeggutor,"[""Grass""]",140,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/103.png
+sv3pt5-104,Cubone,"[""Fighting""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/104.png
+sv3pt5-105,Marowak,"[""Fighting""]",120,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/105.png
+sv3pt5-106,Hitmonlee,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/106.png
+sv3pt5-107,Hitmonchan,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/107.png
+sv3pt5-108,Lickitung,"[""Colorless""]",100,Common,151,2023,https://images.pokemontcg.io/sv3pt5/108.png
+sv3pt5-109,Koffing,"[""Darkness""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/109.png
+sv3pt5-11,Metapod,"[""Grass""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/11.png
+sv3pt5-110,Weezing,"[""Darkness""]",110,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/110.png
+sv3pt5-111,Rhyhorn,"[""Fighting""]",100,Common,151,2023,https://images.pokemontcg.io/sv3pt5/111.png
+sv3pt5-112,Rhydon,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/112.png
+sv3pt5-113,Chansey,"[""Colorless""]",110,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/113.png
+sv3pt5-114,Tangela,"[""Grass""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/114.png
+sv3pt5-115,Kangaskhan ex,"[""Colorless""]",230,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/115.png
+sv3pt5-116,Horsea,"[""Water""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/116.png
+sv3pt5-117,Seadra,"[""Water""]",80,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/117.png
+sv3pt5-118,Goldeen,"[""Water""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/118.png
+sv3pt5-119,Seaking,"[""Water""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/119.png
+sv3pt5-12,Butterfree,"[""Grass""]",130,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/12.png
+sv3pt5-120,Staryu,"[""Water""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/120.png
+sv3pt5-121,Starmie,"[""Water""]",90,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/121.png
+sv3pt5-122,Mr. Mime,"[""Psychic""]",90,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/122.png
+sv3pt5-123,Scyther,"[""Grass""]",70,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/123.png
+sv3pt5-124,Jynx ex,"[""Water""]",200,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/124.png
+sv3pt5-125,Electabuzz,"[""Lightning""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/125.png
+sv3pt5-126,Magmar,"[""Fire""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/126.png
+sv3pt5-127,Pinsir,"[""Grass""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/127.png
+sv3pt5-128,Tauros,"[""Colorless""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/128.png
+sv3pt5-129,Magikarp,"[""Water""]",30,Common,151,2023,https://images.pokemontcg.io/sv3pt5/129.png
+sv3pt5-13,Weedle,"[""Grass""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/13.png
+sv3pt5-130,Gyarados,"[""Water""]",190,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/130.png
+sv3pt5-131,Lapras,"[""Water""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/131.png
+sv3pt5-132,Ditto,"[""Colorless""]",60,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/132.png
+sv3pt5-133,Eevee,"[""Colorless""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/133.png
+sv3pt5-134,Vaporeon,"[""Water""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/134.png
+sv3pt5-135,Jolteon,"[""Lightning""]",110,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/135.png
+sv3pt5-136,Flareon,"[""Fire""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/136.png
+sv3pt5-137,Porygon,"[""Colorless""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/137.png
+sv3pt5-138,Omanyte,"[""Water""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/138.png
+sv3pt5-139,Omastar,"[""Water""]",150,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/139.png
+sv3pt5-14,Kakuna,"[""Grass""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/14.png
+sv3pt5-140,Kabuto,"[""Fighting""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/140.png
+sv3pt5-141,Kabutops,"[""Fighting""]",160,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/141.png
+sv3pt5-142,Aerodactyl,"[""Colorless""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/142.png
+sv3pt5-143,Snorlax,"[""Colorless""]",150,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/143.png
+sv3pt5-144,Articuno,"[""Water""]",120,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/144.png
+sv3pt5-145,Zapdos ex,"[""Lightning""]",200,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/145.png
+sv3pt5-146,Moltres,"[""Fire""]",120,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/146.png
+sv3pt5-147,Dratini,"[""Dragon""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/147.png
+sv3pt5-148,Dragonair,"[""Dragon""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/148.png
+sv3pt5-149,Dragonite,"[""Dragon""]",180,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/149.png
+sv3pt5-15,Beedrill,"[""Grass""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/15.png
+sv3pt5-150,Mewtwo,"[""Psychic""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/150.png
+sv3pt5-151,Mew ex,"[""Psychic""]",180,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/151.png
+sv3pt5-16,Pidgey,"[""Colorless""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/16.png
+sv3pt5-166,Bulbasaur,"[""Grass""]",70,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/166.png
+sv3pt5-167,Ivysaur,"[""Grass""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/167.png
+sv3pt5-168,Charmander,"[""Fire""]",70,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/168.png
+sv3pt5-169,Charmeleon,"[""Fire""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/169.png
+sv3pt5-17,Pidgeotto,"[""Colorless""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/17.png
+sv3pt5-170,Squirtle,"[""Water""]",60,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/170.png
+sv3pt5-171,Wartortle,"[""Water""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/171.png
+sv3pt5-172,Caterpie,"[""Grass""]",50,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/172.png
+sv3pt5-173,Pikachu,"[""Lightning""]",60,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/173.png
+sv3pt5-174,Nidoking,"[""Darkness""]",170,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/174.png
+sv3pt5-175,Psyduck,"[""Water""]",70,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/175.png
+sv3pt5-176,Poliwhirl,"[""Water""]",90,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/176.png
+sv3pt5-177,Machoke,"[""Fighting""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/177.png
+sv3pt5-178,Tangela,"[""Grass""]",80,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/178.png
+sv3pt5-179,Mr. Mime,"[""Psychic""]",90,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/179.png
+sv3pt5-18,Pidgeot,"[""Colorless""]",130,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/18.png
+sv3pt5-180,Omanyte,"[""Water""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/180.png
+sv3pt5-181,Dragonair,"[""Dragon""]",100,Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/181.png
+sv3pt5-182,Venusaur ex,"[""Grass""]",340,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/182.png
+sv3pt5-183,Charizard ex,"[""Fire""]",330,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/183.png
+sv3pt5-184,Blastoise ex,"[""Water""]",330,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/184.png
+sv3pt5-185,Arbok ex,"[""Darkness""]",270,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/185.png
+sv3pt5-186,Ninetales ex,"[""Fire""]",260,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/186.png
+sv3pt5-187,Wigglytuff ex,"[""Colorless""]",250,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/187.png
+sv3pt5-188,Alakazam ex,"[""Psychic""]",310,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/188.png
+sv3pt5-189,Golem ex,"[""Fighting""]",330,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/189.png
+sv3pt5-19,Rattata,"[""Colorless""]",40,Common,151,2023,https://images.pokemontcg.io/sv3pt5/19.png
+sv3pt5-190,Kangaskhan ex,"[""Colorless""]",230,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/190.png
+sv3pt5-191,Jynx ex,"[""Water""]",200,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/191.png
+sv3pt5-192,Zapdos ex,"[""Lightning""]",200,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/192.png
+sv3pt5-193,Mew ex,"[""Psychic""]",180,Ultra Rare,151,2023,https://images.pokemontcg.io/sv3pt5/193.png
+sv3pt5-198,Venusaur ex,"[""Grass""]",340,Special Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/198.png
+sv3pt5-199,Charizard ex,"[""Fire""]",330,Special Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/199.png
+sv3pt5-2,Ivysaur,"[""Grass""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/2.png
+sv3pt5-20,Raticate,"[""Colorless""]",70,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/20.png
+sv3pt5-200,Blastoise ex,"[""Water""]",330,Special Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/200.png
+sv3pt5-201,Alakazam ex,"[""Psychic""]",310,Special Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/201.png
+sv3pt5-202,Zapdos ex,"[""Lightning""]",200,Special Illustration Rare,151,2023,https://images.pokemontcg.io/sv3pt5/202.png
+sv3pt5-205,Mew ex,"[""Psychic""]",180,Hyper Rare,151,2023,https://images.pokemontcg.io/sv3pt5/205.png
+sv3pt5-21,Spearow,"[""Colorless""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/21.png
+sv3pt5-22,Fearow,"[""Colorless""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/22.png
+sv3pt5-23,Ekans,"[""Darkness""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/23.png
+sv3pt5-24,Arbok ex,"[""Darkness""]",270,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/24.png
+sv3pt5-25,Pikachu,"[""Lightning""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/25.png
+sv3pt5-26,Raichu,"[""Lightning""]",120,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/26.png
+sv3pt5-27,Sandshrew,"[""Fighting""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/27.png
+sv3pt5-28,Sandslash,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/28.png
+sv3pt5-29,Nidoran ♀,"[""Darkness""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/29.png
+sv3pt5-3,Venusaur ex,"[""Grass""]",340,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/3.png
+sv3pt5-30,Nidorina,"[""Darkness""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/30.png
+sv3pt5-31,Nidoqueen,"[""Darkness""]",170,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/31.png
+sv3pt5-32,Nidoran ♂,"[""Darkness""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/32.png
+sv3pt5-33,Nidorino,"[""Darkness""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/33.png
+sv3pt5-34,Nidoking,"[""Darkness""]",170,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/34.png
+sv3pt5-35,Clefairy,"[""Psychic""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/35.png
+sv3pt5-36,Clefable,"[""Psychic""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/36.png
+sv3pt5-37,Vulpix,"[""Fire""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/37.png
+sv3pt5-38,Ninetales ex,"[""Fire""]",260,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/38.png
+sv3pt5-39,Jigglypuff,"[""Colorless""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/39.png
+sv3pt5-4,Charmander,"[""Fire""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/4.png
+sv3pt5-40,Wigglytuff ex,"[""Colorless""]",250,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/40.png
+sv3pt5-41,Zubat,"[""Darkness""]",40,Common,151,2023,https://images.pokemontcg.io/sv3pt5/41.png
+sv3pt5-42,Golbat,"[""Darkness""]",80,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/42.png
+sv3pt5-43,Oddish,"[""Grass""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/43.png
+sv3pt5-44,Gloom,"[""Grass""]",70,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/44.png
+sv3pt5-45,Vileplume,"[""Grass""]",140,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/45.png
+sv3pt5-46,Paras,"[""Grass""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/46.png
+sv3pt5-47,Parasect,"[""Grass""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/47.png
+sv3pt5-48,Venonat,"[""Grass""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/48.png
+sv3pt5-49,Venomoth,"[""Grass""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/49.png
+sv3pt5-5,Charmeleon,"[""Fire""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/5.png
+sv3pt5-50,Diglett,"[""Fighting""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/50.png
+sv3pt5-51,Dugtrio,"[""Fighting""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/51.png
+sv3pt5-52,Meowth,"[""Colorless""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/52.png
+sv3pt5-53,Persian,"[""Colorless""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/53.png
+sv3pt5-54,Psyduck,"[""Water""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/54.png
+sv3pt5-55,Golduck,"[""Water""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/55.png
+sv3pt5-56,Mankey,"[""Fighting""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/56.png
+sv3pt5-57,Primeape,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/57.png
+sv3pt5-58,Growlithe,"[""Fire""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/58.png
+sv3pt5-59,Arcanine,"[""Fire""]",150,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/59.png
+sv3pt5-6,Charizard ex,"[""Fire""]",330,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/6.png
+sv3pt5-60,Poliwag,"[""Water""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/60.png
+sv3pt5-61,Poliwhirl,"[""Water""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/61.png
+sv3pt5-62,Poliwrath,"[""Water""]",160,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/62.png
+sv3pt5-63,Abra,"[""Psychic""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/63.png
+sv3pt5-64,Kadabra,"[""Psychic""]",80,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/64.png
+sv3pt5-65,Alakazam ex,"[""Psychic""]",310,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/65.png
+sv3pt5-66,Machop,"[""Fighting""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/66.png
+sv3pt5-67,Machoke,"[""Fighting""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/67.png
+sv3pt5-68,Machamp,"[""Fighting""]",180,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/68.png
+sv3pt5-69,Bellsprout,"[""Grass""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/69.png
+sv3pt5-7,Squirtle,"[""Water""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/7.png
+sv3pt5-70,Weepinbell,"[""Grass""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/70.png
+sv3pt5-71,Victreebel,"[""Grass""]",150,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/71.png
+sv3pt5-72,Tentacool,"[""Water""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/72.png
+sv3pt5-73,Tentacruel,"[""Water""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/73.png
+sv3pt5-74,Geodude,"[""Fighting""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/74.png
+sv3pt5-75,Graveler,"[""Fighting""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/75.png
+sv3pt5-76,Golem ex,"[""Fighting""]",330,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/76.png
+sv3pt5-77,Ponyta,"[""Fire""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/77.png
+sv3pt5-78,Rapidash,"[""Fire""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/78.png
+sv3pt5-79,Slowpoke,"[""Psychic""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/79.png
+sv3pt5-8,Wartortle,"[""Water""]",100,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/8.png
+sv3pt5-80,Slowbro,"[""Psychic""]",130,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/80.png
+sv3pt5-81,Magnemite,"[""Lightning""]",60,Common,151,2023,https://images.pokemontcg.io/sv3pt5/81.png
+sv3pt5-82,Magneton,"[""Lightning""]",90,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/82.png
+sv3pt5-83,Farfetch'd,"[""Colorless""]",90,Common,151,2023,https://images.pokemontcg.io/sv3pt5/83.png
+sv3pt5-84,Doduo,"[""Colorless""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/84.png
+sv3pt5-85,Dodrio,"[""Colorless""]",100,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/85.png
+sv3pt5-86,Seel,"[""Water""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/86.png
+sv3pt5-87,Dewgong,"[""Water""]",130,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/87.png
+sv3pt5-88,Grimer,"[""Darkness""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/88.png
+sv3pt5-89,Muk,"[""Darkness""]",150,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/89.png
+sv3pt5-9,Blastoise ex,"[""Water""]",330,Double Rare,151,2023,https://images.pokemontcg.io/sv3pt5/9.png
+sv3pt5-90,Shellder,"[""Water""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/90.png
+sv3pt5-91,Cloyster,"[""Water""]",130,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/91.png
+sv3pt5-92,Gastly,"[""Psychic""]",50,Common,151,2023,https://images.pokemontcg.io/sv3pt5/92.png
+sv3pt5-93,Haunter,"[""Psychic""]",80,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/93.png
+sv3pt5-94,Gengar,"[""Psychic""]",130,Rare,151,2023,https://images.pokemontcg.io/sv3pt5/94.png
+sv3pt5-95,Onix,"[""Fighting""]",120,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/95.png
+sv3pt5-96,Drowzee,"[""Psychic""]",80,Common,151,2023,https://images.pokemontcg.io/sv3pt5/96.png
+sv3pt5-97,Hypno,"[""Psychic""]",110,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/97.png
+sv3pt5-98,Krabby,"[""Water""]",70,Common,151,2023,https://images.pokemontcg.io/sv3pt5/98.png
+sv3pt5-99,Kingler,"[""Water""]",140,Uncommon,151,2023,https://images.pokemontcg.io/sv3pt5/99.png
+xy12-1,Venusaur-EX,"[""Grass""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/1.png
+xy12-10,Charmeleon,"[""Fire""]",80,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/10.png
+xy12-100,M Venusaur-EX,"[""Grass""]",230,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/100.png
+xy12-101,M Charizard-EX,"[""Fire""]",220,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/101.png
+xy12-102,M Blastoise-EX,"[""Water""]",220,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/102.png
+xy12-103,Mewtwo-EX,"[""Psychic""]",180,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/103.png
+xy12-104,Pidgeot-EX,"[""Colorless""]",170,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/104.png
+xy12-105,M Pidgeot-EX,"[""Colorless""]",220,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/105.png
+xy12-106,Dragonite-EX,"[""Colorless""]",180,Rare Ultra,Evolutions,2016,https://images.pokemontcg.io/xy12/106.png
+xy12-109,ナッシー[Exeggutor],"[""Grass""]",80,Rare Secret,Evolutions,2016,https://images.pokemontcg.io/xy12/109.png
+xy12-11,Charizard,"[""Fire""]",150,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/11.png
+xy12-110,Flying Pikachu,"[""Lightning""]",40,Rare Secret,Evolutions,2016,https://images.pokemontcg.io/xy12/110.png
+xy12-111,Surfing Pikachu,"[""Lightning""]",50,Rare Secret,Evolutions,2016,https://images.pokemontcg.io/xy12/111.png
+xy12-112,Imakuni?'s Doduo,"[""Colorless""]",50,Rare Secret,Evolutions,2016,https://images.pokemontcg.io/xy12/112.png
+xy12-12,Charizard-EX,"[""Fire""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/12.png
+xy12-13,M Charizard-EX,"[""Fire""]",220,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/13.png
+xy12-14,Vulpix,"[""Fire""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/14.png
+xy12-15,Ninetales,"[""Fire""]",100,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/15.png
+xy12-16,Ninetales BREAK,"[""Fire""]",140,Rare BREAK,Evolutions,2016,https://images.pokemontcg.io/xy12/16.png
+xy12-17,Growlithe,"[""Fire""]",70,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/17.png
+xy12-18,Arcanine,"[""Fire""]",130,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/18.png
+xy12-19,Ponyta,"[""Fire""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/19.png
+xy12-2,M Venusaur-EX,"[""Grass""]",230,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/2.png
+xy12-20,Magmar,"[""Fire""]",80,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/20.png
+xy12-21,Blastoise-EX,"[""Water""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/21.png
+xy12-22,M Blastoise-EX,"[""Water""]",220,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/22.png
+xy12-23,Poliwag,"[""Water""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/23.png
+xy12-24,Poliwhirl,"[""Water""]",80,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/24.png
+xy12-25,Poliwrath,"[""Water""]",140,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/25.png
+xy12-26,Slowbro-EX,"[""Water""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/26.png
+xy12-27,M Slowbro-EX,"[""Water""]",220,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/27.png
+xy12-28,Seel,"[""Water""]",80,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/28.png
+xy12-29,Dewgong,"[""Water""]",120,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/29.png
+xy12-3,Caterpie,"[""Grass""]",40,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/3.png
+xy12-30,Staryu,"[""Water""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/30.png
+xy12-31,Starmie,"[""Water""]",90,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/31.png
+xy12-32,Starmie BREAK,"[""Water""]",130,Rare BREAK,Evolutions,2016,https://images.pokemontcg.io/xy12/32.png
+xy12-33,Magikarp,"[""Water""]",30,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/33.png
+xy12-34,Gyarados,"[""Water""]",130,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/34.png
+xy12-35,Pikachu,"[""Lightning""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/35.png
+xy12-36,Raichu,"[""Lightning""]",100,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/36.png
+xy12-37,Magnemite,"[""Lightning""]",50,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/37.png
+xy12-38,Magneton,"[""Lightning""]",80,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/38.png
+xy12-39,Voltorb,"[""Lightning""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/39.png
+xy12-4,Metapod,"[""Grass""]",70,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/4.png
+xy12-40,Electrode,"[""Lightning""]",80,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/40.png
+xy12-41,Electabuzz,"[""Lightning""]",70,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/41.png
+xy12-42,Zapdos,"[""Lightning""]",110,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/42.png
+xy12-43,Nidoran ♂,"[""Psychic""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/43.png
+xy12-44,Nidorino,"[""Psychic""]",90,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/44.png
+xy12-45,Nidoking,"[""Psychic""]",150,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/45.png
+xy12-46,Nidoking BREAK,"[""Psychic""]",180,Rare BREAK,Evolutions,2016,https://images.pokemontcg.io/xy12/46.png
+xy12-47,Gastly,"[""Psychic""]",40,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/47.png
+xy12-48,Haunter,"[""Psychic""]",70,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/48.png
+xy12-49,Drowzee,"[""Psychic""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/49.png
+xy12-5,Weedle,"[""Grass""]",40,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/5.png
+xy12-50,Koffing,"[""Psychic""]",60,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/50.png
+xy12-51,Mewtwo,"[""Psychic""]",130,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/51.png
+xy12-52,Mewtwo-EX,"[""Psychic""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/52.png
+xy12-53,Mew,"[""Psychic""]",40,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/53.png
+xy12-54,Sandshrew,"[""Fighting""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/54.png
+xy12-55,Diglett,"[""Fighting""]",40,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/55.png
+xy12-56,Dugtrio,"[""Fighting""]",90,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/56.png
+xy12-57,Machop,"[""Fighting""]",70,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/57.png
+xy12-58,Machoke,"[""Fighting""]",90,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/58.png
+xy12-59,Machamp,"[""Fighting""]",160,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/59.png
+xy12-6,Kakuna,"[""Grass""]",80,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/6.png
+xy12-60,Machamp BREAK,"[""Fighting""]",190,Rare BREAK,Evolutions,2016,https://images.pokemontcg.io/xy12/60.png
+xy12-61,Onix,"[""Fighting""]",100,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/61.png
+xy12-62,Hitmonchan,"[""Fighting""]",90,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/62.png
+xy12-63,Clefairy,"[""Fairy""]",40,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/63.png
+xy12-64,Pidgeot-EX,"[""Colorless""]",170,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/64.png
+xy12-65,M Pidgeot-EX,"[""Colorless""]",220,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/65.png
+xy12-66,Rattata,"[""Colorless""]",40,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/66.png
+xy12-67,Raticate,"[""Colorless""]",60,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/67.png
+xy12-68,Farfetch'd,"[""Colorless""]",70,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/68.png
+xy12-69,Doduo,"[""Colorless""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/69.png
+xy12-7,Beedrill,"[""Grass""]",120,Rare,Evolutions,2016,https://images.pokemontcg.io/xy12/7.png
+xy12-70,Chansey,"[""Colorless""]",120,Rare Holo,Evolutions,2016,https://images.pokemontcg.io/xy12/70.png
+xy12-71,Porygon,"[""Colorless""]",60,Uncommon,Evolutions,2016,https://images.pokemontcg.io/xy12/71.png
+xy12-72,Dragonite-EX,"[""Colorless""]",180,Rare Holo EX,Evolutions,2016,https://images.pokemontcg.io/xy12/72.png
+xy12-8,Tangela,"[""Grass""]",80,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/8.png
+xy12-9,Charmander,"[""Fire""]",60,Common,Evolutions,2016,https://images.pokemontcg.io/xy12/9.png

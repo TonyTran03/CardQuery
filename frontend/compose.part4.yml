@@ -1,0 +1,27 @@
+# Part 4 Compose fragment - merge into the integrator's docker-compose.yml.
+# Assumes services named `api` (Part 3) and `postgres` (Part 6) exist.
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    environment:
+      API_BASE_URL: http://api:8000
+    ports:
+      - "5000:5000"
+    depends_on:
+      - api
+
+  # Not started by `docker compose up`; run on demand, e.g.
+  #   docker compose run --rm simulator --mode drift --count 100
+  simulator:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile.simulator
+    profiles: ["traffic"]
+    environment:
+      API_BASE_URL: http://api:8000
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL in .env}
+    depends_on:
+      - api
+      - postgres

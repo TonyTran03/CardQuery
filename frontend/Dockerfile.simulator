@@ -1,0 +1,25 @@
+# Part 4 traffic simulator. Build from the repo root:
+#   docker build -f frontend/Dockerfile.simulator -t cardquery-simulator .
+# Needs Part 6's monitoring/persistence.py (and its requirements) at integration time.
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    API_BASE_URL=http://api:8000
+
+WORKDIR /app
+COPY frontend/requirements-simulator.txt frontend/requirements-simulator.txt
+COPY monitoring/ monitoring/
+RUN pip install --no-cache-dir -r frontend/requirements-simulator.txt \
+ && for f in monitoring/requirements*.txt; do \
+      if [ -f "$f" ]; then pip install --no-cache-dir -r "$f" || exit 1; fi; \
+    done
+
+COPY data/ data/
+COPY tests/fixtures/unseen_normal.csv tests/fixtures/unseen_drift.csv tests/fixtures/
+
+RUN useradd --create-home --uid 10001 app
+USER app
+
+ENTRYPOINT ["python", "-m", "monitoring.simulator"]
+CMD ["--mode", "normal", "--count", "100"]

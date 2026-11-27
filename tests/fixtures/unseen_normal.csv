@@ -1,0 +1,13 @@
+query,filters_json
+charizard cards with at least 100 hp,"{""name"": ""Charizard"", ""types"": [], ""hp_min"": 100, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+fire pokemon over 150 hp,"{""name"": null, ""types"": [""Fire""], ""hp_min"": 151, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+rare charizard,"{""name"": ""Charizard"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Rare"", ""year_min"": null, ""year_max"": null}"
+list pikachu,"{""name"": ""Pikachu"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+common lightning cards,"{""name"": null, ""types"": [""Lightning""], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Common"", ""year_min"": null, ""year_max"": null}"
+fire cards released after 2017,"{""name"": null, ""types"": [""Fire""], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2018, ""year_max"": null}"
+charizard from 2016,"{""name"": ""Charizard"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2016, ""year_max"": 2016}"
+water or grass cards under 90 hp,"{""name"": null, ""types"": [""Grass"", ""Water""], ""hp_min"": null, ""hp_max"": 89, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+rare fire cards before 2019,"{""name"": null, ""types"": [""Fire""], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Rare"", ""year_min"": null, ""year_max"": 2018}"
+pikachu with at most 60 hp,"{""name"": ""Pikachu"", ""types"": [], ""hp_min"": null, ""hp_max"": 60, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+psychic cards with at least 120 hp,"{""name"": null, ""types"": [""Psychic""], ""hp_min"": 120, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+lightning pikachu released in 2018,"{""name"": ""Pikachu"", ""types"": [""Lightning""], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2018, ""year_max"": 2018}"

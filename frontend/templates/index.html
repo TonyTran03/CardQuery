@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CardQuery{% if query %} – {{ query }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <h1>CardQuery</h1>
+      <p class="tagline">Find Pokémon cards by describing them in plain language.</p>
+    </header>
+
+    <form id="search-form" class="search" action="{{ url_for('index') }}" method="get" role="search">
+      <label for="q" class="visually-hidden">Search cards</label>
+      <input id="q" name="q" type="search" value="{{ query }}" maxlength="500"
+             placeholder="e.g. fire charizards with at least 150 hp" autocomplete="off" autofocus>
+      <button id="search-button" type="submit">Search</button>
+    </form>
+
+    <div id="loading" class="loading" role="status" aria-live="polite" hidden>
+      <span class="spinner" aria-hidden="true"></span> Searching…
+    </div>
+
+    {% if error %}
+    <div id="error" class="error" role="alert">{{ error }}</div>
+    {% endif %}
+
+    {% if results %}
+    <section id="results" aria-labelledby="results-heading">
+      <div class="summary">
+        <h2 id="results-heading" class="count">{{ results.count_label }}</h2>
+        <p class="filters"><strong>Interpreted filters:</strong> <span id="filters-text">{{ results.filters_text }}</span></p>
+        {% if results.model_version %}<p class="model">Model {{ results.model_version }}</p>{% endif %}
+      </div>
+
+      {% if results.cards %}
+        {% if results.total > results.cards|length %}
+        <p class="range">Showing {{ results.first }}–{{ results.last }} of {{ results.total }}</p>
+        {% endif %}
+        <ul class="gallery">
+          {% for card in results.cards %}
+          <li class="card">
+            {% if card.image_url %}
+            <img src="{{ card.image_url }}" alt="{{ card.name }} card" loading="lazy">
+            {% else %}
+            <div class="placeholder" role="img" aria-label="No image available for {{ card.name }}">
+              <span>No image</span>
+            </div>
+            {% endif %}
+            <div class="card-body">
+              <h3>{{ card.name }}</h3>
+              <p class="stats">
+                <span>{{ card.types }}</span><span>{{ card.hp }}</span><span>{{ card.rarity }}</span>
+              </p>
+              <p class="meta">
+                <span>{{ card.set_name }}</span><span>{{ card.year }}</span><span>ID: {{ card.card_id }}</span>
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% if results.prev_offset is not none or results.next_offset is not none %}
+        <nav class="pager" aria-label="Result pages">
+          {% if results.prev_offset is not none %}
+          <a href="{{ url_for('index', q=query, offset=results.prev_offset) }}">← Previous</a>
+          {% endif %}
+          {% if results.next_offset is not none %}
+          <a href="{{ url_for('index', q=query, offset=results.next_offset) }}">Next →</a>
+          {% endif %}
+        </nav>
+        {% endif %}
+      {% else %}
+        <p id="empty" class="empty">No cards matched your search. Try removing a filter or widening a range.</p>
+      {% endif %}
+    </section>
+    {% endif %}
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

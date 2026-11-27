@@ -1,0 +1,89 @@
+﻿training-1  | /usr/local/lib/python3.11/site-packages/mlflow/pyfunc/utils/data_validation.py:187: UserWarning: [33mAdd type hints to the `predict` method to enable data validation and automatic signature inference during model logging. Check https://mlflow.org/docs/latest/model/python_model.html#type-hint-usage-in-pythonmodel for more details.[0m
+training-1  |   color_warning(
+training-1  | 07:33:03.900 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8287
+training-1  | See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+training-1  | 07:33:19.178 | INFO    | Flow run 'crimson-sambar' - Beginning flow run 'crimson-sambar' for flow 'cardquery-training'
+training-1  | 2026/11/27 07:33:19 INFO mlflow.tracking.fluent: Experiment with name 'query-parser' does not exist. Creating a new experiment.
+training-1  | Loaded 19196 queries
+training-1  | 07:33:20.607 | INFO    | Task run 'load_data-5b5' - Finished in state Completed()
+training-1  | Training: 11516
+training-1  | Validation: 3840
+training-1  | Testing: 3840
+training-1  | 07:33:24.863 | INFO    | Task run 'split_data-2fc' - Finished in state Completed()
+training-1  | 2026/11/27 07:33:27 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+training-1  | The git executable must be specified in one of the following ways:
+training-1  |     - be included in your $PATH
+training-1  |     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+training-1  |     - explicitly set via git.refresh(<full-path-to-git-executable>)
+training-1  | 
+training-1  | All git commands will error until this is rectified.
+training-1  | 
+training-1  | This initial message can be silenced or aggravated in the future by setting the
+training-1  | $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+training-1  |     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+training-1  |     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+training-1  |     - error|e|exception|raise|r|2: for a raised exception
+training-1  | 
+training-1  | Example:
+training-1  |     export GIT_PYTHON_REFRESH=quiet
+training-1  | 
+training-1  | 2026/11/27 07:33:27 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git branch is not available. Error: Failed to initialize: Bad git executable.
+training-1  | The git executable must be specified in one of the following ways:
+training-1  |     - be included in your $PATH
+training-1  |     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+training-1  |     - explicitly set via git.refresh(<full-path-to-git-executable>)
+training-1  | 
+training-1  | All git commands will error until this is rectified.
+training-1  | 
+training-1  | This initial message can be silenced or aggravated in the future by setting the
+training-1  | $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+training-1  |     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+training-1  |     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+training-1  |     - error|e|exception|raise|r|2: for a raised exception
+training-1  | 
+training-1  | Example:
+training-1  |     export GIT_PYTHON_REFRESH=quiet
+training-1  | 
+training-1  | 2026/11/27 07:33:27 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git repository URL is not available. Error: Failed to initialize: Bad git executable.
+training-1  | The git executable must be specified in one of the following ways:
+training-1  |     - be included in your $PATH
+training-1  |     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+training-1  |     - explicitly set via git.refresh(<full-path-to-git-executable>)
+training-1  | 
+training-1  | All git commands will error until this is rectified.
+training-1  | 
+training-1  | This initial message can be silenced or aggravated in the future by setting the
+training-1  | $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+training-1  |     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+training-1  |     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+training-1  |     - error|e|exception|raise|r|2: for a raised exception
+training-1  | 
+training-1  | Example:
+training-1  |     export GIT_PYTHON_REFRESH=quiet
+training-1  | 
+training-1  | ≡ƒÅâ View run candidate-C-0.1 at: http://mlflow:5000/#/experiments/1/runs/7bb38e9119064b3c9145371e741520c8
+training-1  | ≡ƒº¬ View experiment at: http://mlflow:5000/#/experiments/1
+training-1  | 07:33:42.422 | INFO    | Task run 'train_candidate-e48' - Finished in state Completed()
+training-1  | ≡ƒÅâ View run candidate-C-1.0 at: http://mlflow:5000/#/experiments/1/runs/1b8fce9d69934980ab2c4238fbe0ae00
+training-1  | ≡ƒº¬ View experiment at: http://mlflow:5000/#/experiments/1
+training-1  | 07:34:16.523 | INFO    | Task run 'train_candidate-4cc' - Finished in state Completed()
+training-1  | ≡ƒÅâ View run candidate-C-10.0 at: http://mlflow:5000/#/experiments/1/runs/196b5170853c4d80ae295573977fbbfb
+training-1  | ≡ƒº¬ View experiment at: http://mlflow:5000/#/experiments/1
+training-1  | 07:34:54.298 | INFO    | Task run 'train_candidate-99d' - Finished in state Completed()
+training-1  | Selected C: 10.0
+training-1  | 07:34:54.309 | INFO    | Task run 'select_best_model-d82' - Finished in state Completed()
+training-1  | 2026/11/27 07:35:27 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+training-1  | 2026/11/27 07:35:27 INFO mlflow.pyfunc: Validating input example against model signature
+training-1  | Successfully registered model 'pokemon-query-parser'.
+training-1  | 2026/11/27 07:35:29 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: pokemon-query-parser, version 1
+training-1  | Created version '1' of model 'pokemon-query-parser'.
+training-1  | ≡ƒÅâ View run final-model at: http://mlflow:5000/#/experiments/1/runs/1fb3765aeb1d4d64958513cd01ec6b2a
+training-1  | ≡ƒº¬ View experiment at: http://mlflow:5000/#/experiments/1
+training-1  | 07:35:29.975 | INFO    | Task run 'train_final_model-1d4' - Finished in state Completed()
+training-1  | 07:35:30.056 | INFO    | Flow run 'crimson-sambar' - Finished in state Completed()
+training-1  | Training bootstrap completed
+training-1  | {
+training-1  |   "model_uri": "models:/pokemon-query-parser/1",
+training-1  |   "model_version": "1"
+training-1  | }
+training-1  | 07:35:30.140 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8287

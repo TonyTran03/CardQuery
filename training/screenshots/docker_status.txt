@@ -1,0 +1,3 @@
+﻿NAME                   IMAGE                COMMAND                  SERVICE    CREATED          STATUS                      PORTS
+cardquery-mlflow-1     cardquery-mlflow     "mlflow server --bacΓÇª"   mlflow     14 minutes ago   Up 14 minutes (healthy)     127.0.0.1:5001->5000/tcp
+cardquery-training-1   cardquery-training   "python -m training.ΓÇª"   training   14 minutes ago   Exited (0) 11 minutes ago   

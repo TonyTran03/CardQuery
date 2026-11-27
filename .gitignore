@@ -9,3 +9,23 @@ dist/
 .env
 .env.*
 !.env.example
+
+
+# Training and MLflow generated files
+mlflow.db
+mlflow.db-*
+mlruns/
+mlartifacts/
+artifacts/active_model.json
+
+# Python caches and local environments
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Local credentials
+.env
+.env.*
+!.env.example

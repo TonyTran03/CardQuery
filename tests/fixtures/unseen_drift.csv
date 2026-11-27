@@ -1,0 +1,13 @@
+query,filters_json
+yo can u pull up every single charizard thats got like 100 hp or more,"{""name"": ""Charizard"", ""types"": [], ""hp_min"": 100, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+I AM LOOKING FOR FIRE TYPE CARDS WITH MORE THAN 150 HP PLEASE,"{""name"": null, ""types"": [""Fire""], ""hp_min"": 151, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+charzard rare one pls,"{""name"": ""Charizard"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Rare"", ""year_min"": null, ""year_max"": null}"
+any pikachus at all??,"{""name"": ""Pikachu"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+"need common electric-type stuff, lightning i mean","{""name"": null, ""types"": [""Lightning""], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Common"", ""year_min"": null, ""year_max"": null}"
+show me whatever fire cards came out after the year 2017 if you have them,"{""name"": null, ""types"": [""Fire""], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2018, ""year_max"": null}"
+"charizard printed in 2016 exactly, nothing else","{""name"": ""Charizard"", ""types"": [], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2016, ""year_max"": 2016}"
+low hp stuff (under 90) thats water or grass,"{""name"": null, ""types"": [""Grass"", ""Water""], ""hp_min"": null, ""hp_max"": 89, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+"older rare fire cards, anything before 2019 works for me","{""name"": null, ""types"": [""Fire""], ""hp_min"": null, ""hp_max"": null, ""rarity"": ""Rare"", ""year_min"": null, ""year_max"": 2018}"
+"weak pikachu cards, 60hp max","{""name"": ""Pikachu"", ""types"": [], ""hp_min"": null, ""hp_max"": 60, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+"psychic types that are tanky, 120+ hp","{""name"": null, ""types"": [""Psychic""], ""hp_min"": 120, ""hp_max"": null, ""rarity"": null, ""year_min"": null, ""year_max"": null}"
+lightning pikachu from twenty eighteen aka 2018,"{""name"": ""Pikachu"", ""types"": [""Lightning""], ""hp_min"": null, ""hp_max"": null, ""rarity"": null, ""year_min"": 2018, ""year_max"": 2018}"

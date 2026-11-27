@@ -1,0 +1,3 @@
+# Part 4 - traffic simulator (runtime). Part 6's storage adapter
+# (monitoring.persistence) brings its own pinned dependencies, e.g. psycopg.
+requests==2.34.2

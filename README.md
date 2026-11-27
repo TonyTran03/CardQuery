@@ -1,7 +1,18 @@
 # CardQuery
 
-Search Pokémon cards with plain-language queries. This checkout contains the
-Part 1 catalog and the Part 2 learned query parser.
+Search Pokémon cards with plain-language queries. This checkout includes the
+card catalog, learned query parser, HTTP API, frontend, and traffic simulator.
+
+## Run the search API
+
+```bash
+python -m pip install -r api/requirements.txt
+python -m uvicorn api.main:app --port 8000
+```
+
+Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to try the routes.
+For setup options and Docker instructions, see the [API README](api/README.md).
+The [frontend](frontend/README.md) uses this API by default.
 
 ## Try the model
 
@@ -21,7 +32,7 @@ Press Ctrl+C in the terminal to stop.
 
 The HTML file is `parser/demo/index.html`. Serve it with the command above:
 opening it directly cannot run the Python model. This is a Part 2 development
-tester; the team's production API and frontend remain separate components.
+tester. Use the search API above with the frontend or traffic simulator.
 
 ```bash
 # Offline tests

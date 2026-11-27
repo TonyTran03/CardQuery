@@ -1,10 +1,12 @@
 FROM python:3.11-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 DO_NOT_TRACK=1 EVIDENTLY_DISABLE_TELEMETRY=1
 WORKDIR /app
 COPY monitoring/requirements.txt monitoring/requirements.txt
 RUN pip install --no-cache-dir -r monitoring/requirements.txt
-COPY monitoring/drift.py monitoring/performance.py monitoring/persistence.py monitoring/
+COPY monitoring/__init__.py monitoring/drift.py monitoring/performance.py monitoring/persistence.py monitoring/
 COPY monitoring/sql monitoring/sql
 COPY data/reference_traffic.jsonl data/reference_traffic.jsonl
+COPY data/reference_simulator.jsonl data/reference_simulator.jsonl
 COPY tests/test_monitoring.py tests/test_monitoring.py
 COPY tests/fixtures/monitoring/ tests/fixtures/monitoring/
 CMD ["python", "-m", "monitoring.drift", "--reference", "data/reference_traffic.jsonl", "--watch-seconds", "60"]

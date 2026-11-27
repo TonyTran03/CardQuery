@@ -12,10 +12,12 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ConfigDict, Field, StringConstraints, model_validator
 
 from api.stubs import DEMO_CARDS, stub_instrument_api, stub_parse
+from api.query_interpreter import QueryInterpreter, normalize_search_query
 from catalog.cards import load_cards
 from parser import load_parser, parse_query
 from parser.contracts import InvalidQueryError, validate_filters
 from search.search import CardSearchIndex
+from monitoring.metrics import instrument_api
 
 ROOT = Path(__file__).resolve().parents[1]
 logger = logging.getLogger(__name__)
@@ -64,13 +66,16 @@ def create_app(
     instrument: Callable[[FastAPI], None] = stub_instrument_api,
 ) -> FastAPI:
     catalog = CardSearchIndex(cards)
+    interpreter = QueryInterpreter(cards)
     app = FastAPI(title="CardQuery API")
 
     def parse_filters(query: str) -> dict:
         if parse is None:
             raise HTTPException(status_code=503, detail="model_unavailable")
         try:
-            return validate_filters(parse(query))
+            normalized = normalize_search_query(query)
+            filters = validate_filters(parse(normalized))
+            return interpreter.validate_prediction(normalized, filters)
         except InvalidQueryError as exc:
             raise HTTPException(status_code=422, detail=str(exc)) from exc
         except Exception as exc:
@@ -114,20 +119,27 @@ def create_local_app() -> FastAPI:
     mode = os.environ.get("CARDQUERY_API_MODE", "local")
     if mode == "stub":
         return create_app(DEMO_CARDS, stub_parse)
-    if mode != "local":
-        raise ValueError("CARDQUERY_API_MODE must be 'local' or 'stub'")
+    if mode not in {"local", "registry"}:
+        raise ValueError("CARDQUERY_API_MODE must be 'local', 'registry', or 'stub'")
 
     cards_path = os.environ.get("CARDQUERY_CARDS_PATH", str(ROOT / "data/cards.csv"))
     model_path = os.environ.get("CARDQUERY_MODEL_PATH", str(ROOT / "artifacts/parser/model.joblib"))
     model_version = os.environ.get("CARDQUERY_MODEL_VERSION", "local-v1")
     cards = load_cards(cards_path)
     try:
-        parse = partial(parse_query, load_parser(model_path))
+        if mode == "registry":
+            from api.model_loader import load_registered_parser
+
+            parse, model_version = load_registered_parser(os.environ.get(
+                "CARDQUERY_ACTIVE_MODEL_PATH", str(ROOT / "artifacts/active_model.json"),
+            ))
+        else:
+            parse = partial(parse_query, load_parser(model_path))
         validate_filters(parse("cards"))
     except Exception:
         logger.exception("CardQuery model could not be initialized")
-        return create_app(cards, None, model_version)
-    return create_app(cards, parse, model_version)
+        return create_app(cards, None, model_version, instrument=instrument_api)
+    return create_app(cards, parse, model_version, instrument=instrument_api)
 
 
 app = create_local_app()

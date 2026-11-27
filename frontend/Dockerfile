@@ -11,6 +11,7 @@ COPY frontend/requirements.txt frontend/requirements.txt
 RUN pip install --no-cache-dir -r frontend/requirements.txt
 
 COPY frontend/ frontend/
+COPY shared/ shared/
 
 RUN useradd --create-home --uid 10001 app
 USER app

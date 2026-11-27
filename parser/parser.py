@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import os
 import re
 from pathlib import Path
 
@@ -32,7 +33,14 @@ def preprocess_query(query: str) -> str:
     return " ".join(text.split())
 
 
-def train_parser(rows: list[dict], seed: int = 42, C: float = 1.0):
+def train_parser(rows: list[dict], seed: int = 42, C: float = 1.0, *, kind: str | None = None):
+    selected_kind = kind or os.getenv("CARDQUERY_PARSER_KIND", "baseline")
+    if selected_kind == "semantic":
+        from .semantic import train_semantic_parser
+
+        return train_semantic_parser(rows, seed, C)
+    if selected_kind != "baseline":
+        raise ValueError("CARDQUERY_PARSER_KIND must be baseline or semantic")
     if isinstance(C, bool) or not isinstance(C, (int, float)) or not math.isfinite(C) or C <= 0:
         raise ValueError("C must be a finite positive number")
     if type(seed) is not int or not 0 <= seed < 2 ** 32:
@@ -78,6 +86,24 @@ def train_parser(rows: list[dict], seed: int = 42, C: float = 1.0):
 
 
 def validate_bundle(model):
+    if isinstance(model, dict) and model.get("parser_kind") == "minilm-tfidf-logreg-hybrid-v2":
+        required = {"vectorizer", "name_classifier", "rarity_classifier", "type_classifiers", "vocabulary", "encoder"}
+        if not required <= model.keys():
+            raise ValueError("incomplete semantic parser bundle")
+        if model.get("numeric_rules_version") != "v2" or model.get("semantic_features_version") != "v1":
+            raise ValueError("unsupported semantic parser version")
+        from .encoder import FILES, REVISION
+        import hashlib
+
+        assets = model.get("encoder", {})
+        if assets.get("revision") != REVISION or any(
+            not isinstance(assets.get(key), bytes) or hashlib.sha256(assets[key]).hexdigest() != info[2]
+            for key, info in FILES.items()
+        ):
+            raise ValueError("invalid or incomplete pretrained encoder assets")
+        if model.get("sklearn_version") != sklearn.__version__:
+            raise ValueError("semantic model scikit-learn version does not match runtime")
+        return model
     if not isinstance(model, dict) or model.get("parser_kind") != PARSER_KIND:
         raise ValueError(f"expected a {PARSER_KIND} model bundle")
     if model.get("numeric_rules_version") != NUMERIC_RULES_VERSION or model.get("preprocessing_version") != "v1":
@@ -93,6 +119,10 @@ def validate_bundle(model):
 def parse_queries(model, queries: list[str]) -> list[dict]:
     """Batch inference used by evaluation; the public one-query API stays simple."""
     validate_bundle(model)
+    if model["parser_kind"] == "minilm-tfidf-logreg-hybrid-v2":
+        from .semantic import parse_semantic_queries
+
+        return parse_semantic_queries(model, queries)
     if not queries:
         return []
     numbers = [parse_numeric(query) for query in queries]

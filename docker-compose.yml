@@ -1,0 +1,124 @@
+name: cardquery
+
+x-database: &database
+  DATABASE_URL: postgresql://${POSTGRES_USER:-cardquery}:${POSTGRES_PASSWORD:-cardquery-local-demo}@postgres:5432/${POSTGRES_DB:-cardquery}
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cardquery}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cardquery-local-demo}
+      POSTGRES_DB: ${POSTGRES_DB:-cardquery}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./monitoring/sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  mlflow:
+    image: cardquery-training:local
+    build:
+      context: .
+      dockerfile: training/Dockerfile
+    command: ["mlflow", "server", "--backend-store-uri", "sqlite:////mlflow/mlflow.db", "--serve-artifacts", "--artifacts-destination", "/mlflow/artifacts", "--host", "0.0.0.0", "--port", "5000", "--allowed-hosts", "mlflow:5000,localhost:*,127.0.0.1:*"]
+    ports: ["127.0.0.1:5001:5000"]
+    volumes: ["mlflow_data:/mlflow"]
+    healthcheck:
+      test: [CMD, python, -c, "from urllib.request import urlopen; urlopen('http://localhost:5000/health', timeout=3)"]
+      interval: 5s
+      timeout: 5s
+      retries: 40
+    restart: unless-stopped
+
+  training:
+    image: cardquery-training:local
+    build:
+      context: .
+      dockerfile: training/Dockerfile
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      CARDQUERY_PARSER_BACKEND: real
+      CARDQUERY_PARSER_KIND: semantic
+      OPENBLAS_NUM_THREADS: "2"
+      OMP_NUM_THREADS: "2"
+      MKL_NUM_THREADS: "2"
+      TRAINING_DATA_PATH: data/query_examples_semantic.csv
+      PREFECT_SERVER_EPHEMERAL_ENABLED: "true"
+      PREFECT_SERVER_EPHEMERAL_STARTUP_TIMEOUT_SECONDS: "120"
+      PREFECT_SERVER_ANALYTICS_ENABLED: "false"
+    volumes: ["active_model:/app/artifacts"]
+    command: ["python", "-m", "api.bootstrap"]
+    depends_on:
+      mlflow:
+        condition: service_healthy
+
+  api:
+    image: cardquery-api:local
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      CARDQUERY_API_MODE: registry
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      CARDQUERY_ACTIVE_MODEL_PATH: /app/active/active_model.json
+    volumes: ["active_model:/app/active:ro"]
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      training:
+        condition: service_completed_successfully
+      mlflow:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    image: cardquery-frontend:local
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      API_BASE_URL: http://api:8000
+    ports: ["127.0.0.1:5000:5000"]
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  drift-worker:
+    image: cardquery-monitoring:local
+    build:
+      context: .
+      dockerfile: monitoring/Dockerfile.drift
+    environment:
+      <<: *database
+      CARDQUERY_DRIFT_ENGINE: evidently
+      CARDQUERY_METRICS_ENGINE: evidently
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    command: ["python", "-m", "monitoring.drift", "--reference", "data/reference_simulator.jsonl", "--watch-seconds", "60"]
+
+  simulator:
+    image: cardquery-simulator:local
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile.simulator
+    environment:
+      <<: *database
+      API_BASE_URL: http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    command: ["--mode", "normal", "--count", "100"]
+
+volumes:
+  postgres_data:
+  mlflow_data:
+  active_model:

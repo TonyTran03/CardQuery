@@ -1,0 +1,15 @@
+"""Canonical examples from the team integration guide."""
+
+DEMO_CARDS = [
+    {"card_id": "demo-001", "name": "Charizard", "types": ["Fire"], "hp": 180,
+     "rarity": "Rare", "set_name": "Demo A", "release_year": 2020, "image_url": None},
+    {"card_id": "demo-002", "name": "Pikachu", "types": ["Lightning"], "hp": 60,
+     "rarity": "Common", "set_name": "Demo B", "release_year": 2018, "image_url": None},
+    {"card_id": "demo-003", "name": "Charizard", "types": ["Fire"], "hp": 120,
+     "rarity": "Rare", "set_name": "Demo C", "release_year": 2016, "image_url": None},
+]
+GOLDEN_QUERY = "fire charizards with at least 150 hp"
+GOLDEN_FILTERS = {
+    "name": "Charizard", "types": ["Fire"], "hp_min": 150, "hp_max": None,
+    "rarity": None, "year_min": None, "year_max": None,
+}

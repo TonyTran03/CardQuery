@@ -1,6 +1,16 @@
 
 # CardQuery — Training Workflow (Part 5)
 
+The integrated root stack now selects the pretrained semantic parser variant and
+`data/query_examples_semantic.csv` through environment variables. It uses this
+same workflow, with dependency/provenance additions for MiniLM. The baseline
+results and original standalone commands below remain available; see
+[the semantic model documentation](../parser/SEMANTIC.md) for the upgraded model.
+Root-stack startup first validates the active registered model through
+`api.bootstrap`, and calls this component's `training.bootstrap` only when no
+model exists or `--retrain` is requested. The standalone training commands below
+still train explicitly.
+
 ## Overview
 
 This component implements the automated training and experiment

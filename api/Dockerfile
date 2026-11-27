@@ -3,12 +3,16 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY api/requirements.txt api/requirements.txt
 COPY parser/requirements.txt parser/requirements.txt
+COPY parser/requirements-semantic.txt parser/requirements-semantic.txt
 RUN python -m pip install --no-cache-dir -r api/requirements.txt
 
 COPY api/ api/
 COPY search/ search/
 COPY parser/ parser/
 COPY catalog/ catalog/
+COPY shared/ shared/
+COPY training/ training/
+COPY monitoring/__init__.py monitoring/metrics.py monitoring/
 COPY frontend/__init__.py frontend/fake_api.py frontend/fixtures.py frontend/
 COPY data/cards.csv data/cards.csv
 COPY artifacts/parser/model.joblib artifacts/parser/model.joblib

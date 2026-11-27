@@ -1,0 +1,1027 @@
+{
+  "parser_kind": "minilm-tfidf-logreg-hybrid-v2",
+  "encoder": "Xenova/all-MiniLM-L6-v2",
+  "encoder_revision": "cb3d680149bf9a3209564e1b27ab3bb355b65707",
+  "train_report": {
+    "run_id": "3012aef827f747a488160b0d3b465197",
+    "model_name": "pokemon-query-parser",
+    "model_version": "4",
+    "metrics": {
+      "exact_match": 0.992948717948718,
+      "micro_f1": 0.9989707762841905
+    }
+  },
+  "baseline_natural_correct": 13,
+  "natural_evaluation": {
+    "model_version": "4",
+    "n_cases": 40,
+    "exact_match": 1.0,
+    "results": [
+      {
+        "query": "charizard more than 150 hp",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with greater than 180 health points",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 181,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 181,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "show me charizard below 150 HP",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 149,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 149,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with HP > 150",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Pikachu with hp <= 60",
+        "filters": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 60,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 60,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with at least 150 hit points",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with no more than 150 hp",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 150,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 150,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with no less than 150 hp",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "charizard 150+ HP",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with 150 hp exactly",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": 150,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": 150,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with between 120 and 180 health points",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 120,
+          "hp_max": 180,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 120,
+          "hp_max": 180,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Pikachu with HP between 40 and 80",
+        "filters": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": 40,
+          "hp_max": 80,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": 40,
+          "hp_max": 80,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard with 120-180 HP",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 120,
+          "hp_max": 180,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 120,
+          "hp_max": 180,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "show me charizard over 150hp",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "charizard more than 150 hps",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard cards released after 2010",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2011,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2011,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Pikachu cards from the year 2000",
+        "filters": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2000,
+          "year_max": 2000
+        },
+        "predicted": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2000,
+          "year_max": 2000
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard cards released since 2016",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2016,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2016,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Pikachu cards older than 2004",
+        "filters": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": 2003
+        },
+        "predicted": {
+          "name": "Pikachu",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": 2003
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard from 2016 with at least 150 hit points",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2016,
+          "year_max": 2016
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 150,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": 2016,
+          "year_max": 2016
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "show me pokemon that use flames",
+        "filters": {
+          "name": null,
+          "types": [
+            "Fire"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Fire"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "pokemon with electrical powers",
+        "filters": {
+          "name": null,
+          "types": [
+            "Lightning"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Lightning"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "find plant-based pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Grass"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Grass"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "psychic powered cards",
+        "filters": {
+          "name": null,
+          "types": [
+            "Psychic"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Psychic"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "metal element cards",
+        "filters": {
+          "name": null,
+          "types": [
+            "Metal"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Metal"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "fighting type pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Fighting"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Fighting"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "dark type pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Darkness"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Darkness"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "normal type pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Colorless"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Colorless"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "dragon type pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Dragon"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Dragon"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "fairy type pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Fairy"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Fairy"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "fire or water pokemon below 100 hp",
+        "filters": {
+          "name": null,
+          "types": [
+            "Fire",
+            "Water"
+          ],
+          "hp_min": null,
+          "hp_max": 99,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Fire",
+            "Water"
+          ],
+          "hp_min": null,
+          "hp_max": 99,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "water pokemon",
+        "filters": {
+          "name": null,
+          "types": [
+            "Water"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Water"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "could you show me charizard cards",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "please find rare charizard with hp above 150",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": "Rare",
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": "Rare",
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "uncommon fire cards",
+        "filters": {
+          "name": null,
+          "types": [
+            "Fire"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": "Uncommon",
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [
+            "Fire"
+          ],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": "Uncommon",
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "M Charizard-EX with over 200 HP",
+        "filters": {
+          "name": "M Charizard-EX",
+          "types": [],
+          "hp_min": 201,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "M Charizard-EX",
+          "types": [],
+          "hp_min": 201,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Charizard ex with at most 200 HP",
+        "filters": {
+          "name": "Charizard ex",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 200,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard ex",
+          "types": [],
+          "hp_min": null,
+          "hp_max": 200,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "Nidoran female cards",
+        "filters": {
+          "name": "Nidoran ♀",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Nidoran ♀",
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "all pokemon cards",
+        "filters": {
+          "name": null,
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": null,
+          "types": [],
+          "hp_min": null,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      },
+      {
+        "query": "charzard more than 150 hp",
+        "filters": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "predicted": {
+          "name": "Charizard",
+          "types": [],
+          "hp_min": 151,
+          "hp_max": null,
+          "rarity": null,
+          "year_min": null,
+          "year_max": null
+        },
+        "error": null,
+        "correct": true
+      }
+    ],
+    "unknown_queries": [
+      {
+        "query": "winston",
+        "rejected": true
+      },
+      {
+        "query": "steven",
+        "rejected": true
+      },
+      {
+        "query": "hello",
+        "rejected": true
+      },
+      {
+        "query": "flanfy",
+        "rejected": true
+      },
+      {
+        "query": "winston pokemon",
+        "rejected": true
+      },
+      {
+        "query": "sandwich",
+        "rejected": true
+      },
+      {
+        "query": "xyzzyblorp",
+        "rejected": true
+      }
+    ],
+    "note": "Small, separately authored regression set; not a broad general-language accuracy claim."
+  }
+}

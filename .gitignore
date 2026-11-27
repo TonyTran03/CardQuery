@@ -29,3 +29,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+artifacts/active_model.tmp
+.integration-results/
+.prefect/

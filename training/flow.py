@@ -208,6 +208,12 @@ def train_final_model(train, validation, test, C, data_hash):
                     "pydantic",
                 ]
             ]
+            if model["parser_kind"] == "minilm-tfidf-logreg-hybrid-v2":
+                requirements.extend(f"{package}=={version(package)}"
+                                    for package in ["onnxruntime", "tokenizers", "rapidfuzz", "requests"])
+                mlflow.log_params({"encoder_model": model["encoder"]["repository"],
+                                   "encoder_revision": model["encoder"]["revision"],
+                                   "semantic_features_version": model["semantic_features_version"]})
 
             model_info = mlflow.pyfunc.log_model(
                 name="parser-model",

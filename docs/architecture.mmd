@@ -1,0 +1,19 @@
+flowchart LR
+    Labels["Labeled training queries"] --> Training["Prefect training bootstrap"]
+    Encoder["Pinned pretrained MiniLM encoder"] --> Training
+    Training --> Registry["MLflow runs and model registry"]
+    Registry --> Manifest["Pinned active_model.json"]
+    Manifest --> API["FastAPI model API"]
+    Registry --> API
+    Catalog["Card catalog CSV"] --> API
+    Browser["Browser"] --> Frontend["Flask frontend"]
+    Frontend -->|HTTP search| API
+    Unseen["Unseen normal and drift labels"] --> Simulator["Traffic simulator"]
+    Simulator -->|HTTP search| API
+    Simulator -->|Predictions and known labels| Postgres["PostgreSQL prediction_logs"]
+    Reference["Frozen normal reference"] --> Worker["Evidently evaluation worker"]
+    Postgres --> Worker
+    Worker --> Results["PostgreSQL drift_runs and reports"]
+    API --> Metrics["Prometheus metrics endpoint"]
+    Results -.-> Dashboard["Future dashboard and alerts"]
+    Metrics -.-> Dashboard

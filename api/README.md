@@ -38,6 +38,14 @@ The API sorts and indexes cards once at startup. Name, type, and rarity
 filters narrow the cards checked per request. Numeric-only searches still scan
 the sorted catalog to count exact matches.
 
+Before prediction, the API normalizes `less than N hp` to `under N hp`, preserving
+the strict upper bound `N-1`. After prediction, it checks Pokémon names against
+the names actually mentioned in the request. Unknown searches such as `winston`
+return a helpful HTTP 422 message. Type/rarity/HP/year-only queries keep the name
+filter empty, so wording such as `water pokemon` cannot acquire an unrelated
+Pokémon name. These checks live in `api/query_interpreter.py`; the registered
+model weights and the team's training implementation are unchanged.
+
 Set `CARDQUERY_MODEL_PATH`, `CARDQUERY_CARDS_PATH`, or
 `CARDQUERY_MODEL_VERSION` before starting Uvicorn to override the defaults.
 The default version label is `local-v1`. Set `CARDQUERY_API_MODE=stub` to
@@ -45,9 +53,18 @@ serve the three demo cards with the fixture parser. In PowerShell, use
 `$env:CARDQUERY_API_MODE = "stub"` in the terminal running Uvicorn.
 
 `create_app(cards, parse, model_version, instrument)` accepts a replacement
-parser callable and metrics installer. The default installer exposes a process
-gauge. Pass the monitoring team's installer when request counters and latency
-metrics are ready.
+parser callable and metrics installer. Its fixture default exposes a process
+gauge. Local and registry startup install real request counters and duration
+histograms from `monitoring.metrics`, excluding `/metrics` itself.
+
+The root Compose stack uses `CARDQUERY_API_MODE=registry`,
+`MLFLOW_TRACKING_URI=http://mlflow:5000`, and `CARDQUERY_ACTIVE_MODEL_PATH`.
+The adapter reads the bootstrap manifest, loads its exact registered pyfunc
+version, predicts one query row, decodes `filters_json`, and validates Filters.
+The response version comes from that registry manifest. Model initialization
+failure keeps liveness/catalog searches available while readiness returns 503.
+See the root README for full-stack startup; the fragment below runs only the
+local saved-model API.
 
 ```bash
 python -m pip install -r api/requirements-dev.txt

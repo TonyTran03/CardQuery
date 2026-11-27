@@ -12,5 +12,8 @@ mlruns
 mlartifacts
 mlflow.db
 mlflow.db-*
-artifacts/
+artifacts/active_model.json
+artifacts/active_model.tmp
 training/screenshots/
+.integration-results
+.prefect

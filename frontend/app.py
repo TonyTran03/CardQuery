@@ -108,4 +108,17 @@ app = create_app()
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", "5000")))
+    import socket
+
+    port = int(os.environ.get("PORT", "5000"))
+    try:
+        with socket.socket() as probe:
+            if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):
+                probe.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+            probe.bind(("127.0.0.1", port))
+    except OSError:
+        raise SystemExit(
+            f"Port {port} is already in use. If Docker is running, open "
+            f"http://127.0.0.1:{port}/; otherwise choose a different PORT."
+        ) from None
+    app.run(host="0.0.0.0", port=port)

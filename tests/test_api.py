@@ -4,6 +4,7 @@ from fastapi.testclient import TestClient
 from api.main import create_app, create_local_app
 from api.stubs import stub_parse
 from frontend.fixtures import DEMO_CARDS, GOLDEN_FILTERS, GOLDEN_QUERY, GOLDEN_RESPONSE
+from parser import load_parser
 from parser.contracts import InvalidQueryError, empty_filters
 
 
@@ -85,8 +86,11 @@ def test_saved_model_and_catalog(monkeypatch):
     monkeypatch.delenv("CARDQUERY_MODEL_PATH", raising=False)
     monkeypatch.setenv("CARDQUERY_MODEL_VERSION", "test-model")
     with TestClient(create_local_app()) as client:
+        ready = client.get("/ready")
         response = client.post("/search", json={"query": GOLDEN_QUERY, "limit": 1})
         invalid = client.post("/parse", json={"query": "between 200 and 100 hp"})
+    assert ready.status_code == 200
+    assert ready.json() == {"status": "ok"}
     assert response.status_code == 200
     body = response.json()
     assert body["filters"] == GOLDEN_FILTERS
@@ -103,7 +107,22 @@ def test_missing_model_does_not_disable_catalog_only_search(monkeypatch, tmp_pat
     monkeypatch.setenv("CARDQUERY_MODEL_PATH", str(tmp_path / "missing.joblib"))
     with TestClient(create_local_app()) as client:
         assert client.get("/health").json() == {"status": "ok"}
+        ready = client.get("/ready")
         assert client.post("/cards/search", json={"filters": GOLDEN_FILTERS}).status_code == 200
         response = client.post("/search", json={"query": GOLDEN_QUERY})
+    assert ready.status_code == 503
+    assert ready.json() == {"detail": "model_unavailable"}
     assert response.status_code == 503
     assert response.json() == {"detail": "model_unavailable"}
+
+
+def test_model_that_loads_but_cannot_predict_is_not_ready(monkeypatch):
+    def load_unusable_model(path):
+        return dict(load_parser(path), vectorizer=None)
+
+    monkeypatch.setenv("CARDQUERY_API_MODE", "local")
+    monkeypatch.delenv("CARDQUERY_CARDS_PATH", raising=False)
+    monkeypatch.delenv("CARDQUERY_MODEL_PATH", raising=False)
+    monkeypatch.setattr("api.main.load_parser", load_unusable_model)
+    with TestClient(create_local_app()) as client:
+        assert client.get("/ready").status_code == 503

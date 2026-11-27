@@ -17,7 +17,8 @@ frontend and traffic simulator can use their existing default API URL
 | `POST /search` | `{query, limit?, offset?}` | `{filters, cards, total, model_version}` |
 | `POST /parse` | `{query}` | `{filters, model_version}` |
 | `POST /cards/search` | `{filters, limit?, offset?}` | `{cards, total, limit, offset}` |
-| `GET /health` | None | `{"status":"ok"}` |
+| `GET /health` (liveness) | None | `{"status":"ok"}` |
+| `GET /ready` (readiness) | None | `{"status":"ok"}` |
 | `GET /metrics` | None | Prometheus text |
 
 Try `{"query":"fire charizards with at least 150 hp","limit":1}` on
@@ -28,7 +29,14 @@ search accepts all seven keys returned by `/parse`.
 
 Invalid request bodies or contradictory constraints return HTTP 422. If the
 model fails to load or predict, the model routes return HTTP 503 with
-`{"detail":"model_unavailable"}`. Health and catalog-only search still work.
+`{"detail":"model_unavailable"}`. The catalog must load before the API starts.
+`/ready` returns HTTP 503 if the model fails to load or run its startup test
+prediction. Docker uses `/ready` for its health check. The `/health` liveness
+route and catalog-only search still work after a model startup failure.
+
+The API sorts and indexes cards once at startup. Name, type, and rarity
+filters narrow the cards checked per request. Numeric-only searches still scan
+the sorted catalog to count exact matches.
 
 Set `CARDQUERY_MODEL_PATH`, `CARDQUERY_CARDS_PATH`, or
 `CARDQUERY_MODEL_VERSION` before starting Uvicorn to override the defaults.

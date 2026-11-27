@@ -15,7 +15,7 @@ from api.stubs import DEMO_CARDS, stub_instrument_api, stub_parse
 from catalog.cards import load_cards
 from parser import load_parser, parse_query
 from parser.contracts import InvalidQueryError, validate_filters
-from search.search import search_cards
+from search.search import CardSearchIndex
 
 ROOT = Path(__file__).resolve().parents[1]
 logger = logging.getLogger(__name__)
@@ -63,6 +63,7 @@ def create_app(
     model_version: str = "stub-v1",
     instrument: Callable[[FastAPI], None] = stub_instrument_api,
 ) -> FastAPI:
+    catalog = CardSearchIndex(cards)
     app = FastAPI(title="CardQuery API")
 
     def parse_filters(query: str) -> dict:
@@ -80,18 +81,24 @@ def create_app(
     def health() -> dict:
         return {"status": "ok"}
 
+    @app.get("/ready", responses={503: {"description": "Model unavailable"}})
+    def ready() -> dict:
+        if parse is None:
+            raise HTTPException(status_code=503, detail="model_unavailable")
+        return {"status": "ok"}
+
     @app.post("/parse")
     def parse_route(body: QueryRequest) -> dict:
         return {"filters": parse_filters(body.query), "model_version": model_version}
 
     @app.post("/cards/search")
     def filter_route(body: CardSearchRequest) -> dict:
-        return search_cards(cards, body.filters.model_dump(), body.limit, body.offset)
+        return catalog.search(body.filters.model_dump(), body.limit, body.offset)
 
     @app.post("/search")
     def search_route(body: SearchRequest) -> dict:
         filters = parse_filters(body.query)
-        result = search_cards(cards, filters, body.limit, body.offset)
+        result = catalog.search(filters, body.limit, body.offset)
         return {
             "filters": filters,
             "cards": result["cards"],
@@ -115,11 +122,12 @@ def create_local_app() -> FastAPI:
     model_version = os.environ.get("CARDQUERY_MODEL_VERSION", "local-v1")
     cards = load_cards(cards_path)
     try:
-        model = load_parser(model_path)
+        parse = partial(parse_query, load_parser(model_path))
+        validate_filters(parse("cards"))
     except Exception:
-        logger.exception("CardQuery model could not be loaded")
+        logger.exception("CardQuery model could not be initialized")
         return create_app(cards, None, model_version)
-    return create_app(cards, partial(parse_query, model), model_version)
+    return create_app(cards, parse, model_version)
 
 
 app = create_local_app()
